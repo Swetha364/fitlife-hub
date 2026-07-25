@@ -1,4 +1,4 @@
-##FitLife Hub – Health and Fitness Awareness Website
+# FitLife Hub – Health and Fitness Awareness Website
 
 FitLife Hub is a responsive health and fitness awareness website developed using HTML, CSS, and JavaScript. The website is designed to encourage users to adopt a healthy lifestyle by providing information about popular workouts, healthy habits, and fitness tips. It features a modern and user-friendly interface with a responsive design, workout cards, health tips, and a contact section. This project demonstrates front-end web development skills and provides an attractive platform to promote health and wellness.
 
@@ -50,7 +50,6 @@ FitLife Hub is a responsive health and fitness awareness website developed using
 
 ## Author
 
-**Swetha KKR**
-
+**Swetha KKR**  
 B.Tech Information Technology  
-Prathyusha Engineering College
+
