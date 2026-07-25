@@ -1,0 +1,299 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FitLife Hub</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f7f8;
+}
+
+header{
+    background:#2E8B57;
+    color:white;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+}
+
+header h1{
+    font-size:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:bold;
+}
+
+.hero{
+    height:90vh;
+    background:linear-gradient(rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)),
+    url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1500&q=80');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-align:center;
+}
+
+.hero h2{
+    font-size:55px;
+}
+
+.hero p{
+    font-size:22px;
+    margin:20px;
+}
+
+.hero button{
+    padding:15px 30px;
+    border:none;
+    background:#2E8B57;
+    color:white;
+    font-size:18px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+section{
+    padding:70px 10%;
+}
+
+.section-title{
+    text-align:center;
+    color:#2E8B57;
+    margin-bottom:40px;
+    font-size:35px;
+}
+
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
+}
+
+.card{
+    width:280px;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.card h3{
+    padding:15px;
+}
+
+.card p{
+    padding:0 15px 20px;
+}
+
+.about{
+    text-align:center;
+    font-size:20px;
+    line-height:1.8;
+}
+
+.tips{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.tip{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.contact{
+    max-width:600px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+input,textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+}
+
+button{
+    padding:12px 25px;
+    background:#2E8B57;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+footer{
+    background:#2E8B57;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+    .hero h2{
+        font-size:35px;
+    }
+
+    header{
+        flex-direction:column;
+    }
+
+    nav{
+        margin-top:15px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>FitLife Hub</h1>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#workouts">Workouts</a>
+        <a href="#tips">Tips</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h2>Live Healthy, Stay Strong</h2>
+    <p>Your journey toward fitness starts today.</p>
+    <button onclick="showMessage()">Start Now</button>
+</section>
+
+<section id="about">
+    <h2 class="section-title">About Us</h2>
+
+    <p class="about">
+        FitLife Hub is a health and fitness awareness website
+        designed to help people maintain a healthy lifestyle.
+        It provides workout ideas, fitness tips, healthy habits,
+        and motivation for everyday wellness.
+    </p>
+</section>
+
+<section id="workouts">
+    <h2 class="section-title">Popular Workouts</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a">
+            <h3>Walking</h3>
+            <p>Improve heart health and burn calories.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd">
+            <h3>Yoga</h3>
+            <p>Reduce stress and increase flexibility.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48">
+            <h3>Gym Workout</h3>
+            <p>Build strength and muscle endurance.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1517837016564-bfcfd4b22d7d">
+            <h3>Running</h3>
+            <p>Increase stamina and fitness levels.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="tips">
+    <h2 class="section-title">Health Tips</h2>
+
+    <div class="tips">
+        <div class="tip">
+            <h3>Drink Water</h3>
+            <p>Stay hydrated throughout the day.</p>
+        </div>
+
+        <div class="tip">
+            <h3>Sleep Well</h3>
+            <p>Get at least 7–8 hours of sleep daily.</p>
+        </div>
+
+        <div class="tip">
+            <h3>Eat Healthy</h3>
+            <p>Include fruits and vegetables in meals.</p>
+        </div>
+
+        <div class="tip">
+            <h3>Exercise Daily</h3>
+            <p>Stay active for at least 30 minutes.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="section-title">Contact Us</h2>
+
+    <div class="contact">
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea rows="5" placeholder="Message"></textarea>
+
+        <button onclick="sendMessage()">Send Message</button>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 FitLife Hub | Health and Fitness Website</p>
+</footer>
+
+<script>
+function showMessage(){
+    alert("Welcome to FitLife Hub!");
+}
+
+function sendMessage(){
+    alert("Message Sent Successfully!");
+}
+</script>
+
+</body>
+</html>
+```
